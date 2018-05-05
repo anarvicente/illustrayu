@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<h2>Cadastro de Produto</h2>
+
+<form method="post" action ="https://illustrayu-annavicente.c9users.io/slim-skeleton/public/produto">
+	
+	Código: <br>
+	<input type="text" name="codigo"><br>
+	
+	Nome: <br>
+	<input type="text" name="nome"><br>
+	
+	Preço: <br>
+	<input type="number" step=0.05 name="preco"><br>
+	
+	Categoria:<br>
+	<select name="categoria" id="categoria">
+		<option value="Ilustracao">Ilustração</option>
+		<option value="quadrinho">Quadrinho</option>
+		<option value="adesivo">Adesivo</option>
+		<option value="marca-pag">Marca-Página</option>
+	</select> <br>
+	
+	Tipo:<br>
+	<select name="tipo" id="tipo">
+		<option value="Fisico">Físico</option>
+		<option value="Digital">Digital</option>
+	</select> <br>
+	
+	Técnica de pintura:<br>
+	<select name="tecnica" id="tecnica">
+		<option value="Aquarela">Aquarela</option>
+		<option value="Marcador">Marcador</option>
+		<option value="Line Art">Line Art </option>
+	</select> <br>
+	
+	Descrição: <br>
+	<textarea name="descricao" rows="5" cols="25"></textarea><br>
+	
+	Imagem: <br>
+	<input type="file" id="imagem"  onchange="PreviewImage();" multiple><br><br>
+	<img src="" width="100" id="img-preview">
+	<br><br>
+	
+	<input type="submit" value="Cadastrar"><br>
+	
+</form>
+
+<script type="text/javascript">
+	function PreviewImage() {
+		var oFReader = new FileReader();
+		oFReader.readAsDataURL(document.getElementById("imagem").files[0]);
+
+		oFReader.onload = function (oFREvent) {
+			document.getElementById("img-preview").src = oFREvent.target.result;
+		};
+	};
+</script>
+
+</body>
+</html>
