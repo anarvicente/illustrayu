@@ -1,0 +1,16 @@
+[14-May-2018 02:44:54 UTC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET), expecting ',' or ';' in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 31
+[14-May-2018 11:46:21 UTC] PHP Warning:  include_once(conn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 10
+[14-May-2018 11:46:21 UTC] PHP Stack trace:
+[14-May-2018 11:46:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/paginas/login/checa_sessao.php:0
+[14-May-2018 11:46:21 UTC] PHP Warning:  include_once(): Failed opening 'conn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 10
+[14-May-2018 11:46:21 UTC] PHP Stack trace:
+[14-May-2018 11:46:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/paginas/login/checa_sessao.php:0
+[14-May-2018 11:46:21 UTC] PHP Fatal error:  Call to undefined function getAdmin() in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 11
+[14-May-2018 11:46:21 UTC] PHP Stack trace:
+[14-May-2018 11:46:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/paginas/login/checa_sessao.php:0
+[23-May-2018 16:48:29 UTC] PHP Fatal error:  Call to a member function withStatus() on a non-object in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 38
+[23-May-2018 16:48:29 UTC] PHP Stack trace:
+[23-May-2018 16:48:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/paginas/login/checa_sessao.php:0
+[24-May-2018 16:14:47 UTC] PHP Fatal error:  Call to a member function withStatus() on a non-object in /home/ubuntu/workspace/paginas/login/checa_sessao.php on line 38
+[24-May-2018 16:14:47 UTC] PHP Stack trace:
+[24-May-2018 16:14:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/paginas/login/checa_sessao.php:0
